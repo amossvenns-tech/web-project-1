@@ -1,8 +1,8 @@
 body
 {
     display: grid;
-    grid-template-columns: 1fr 4fr 3fr;
-    grid-template-rows: 25vh 70vh 5vh;
+    grid-template-columns: 0.5fr 2fr 1fr;
+    grid-template-rows: 25vh 34.5vh 1vh 34.5vh 5vh;
 }
 header
 {
@@ -18,22 +18,8 @@ header
     align-items: center;
     padding: 30px;
 }
-main
-{   
-    display: flex;
-    grid-column: 2/3;
-    grid-row:2/3;
-    flex-direction: column;
-    
-}
-article
-{
-    display: flex;
-    background-color: #003153;
-    border-radius: 5mm;
-    font-family:"Comic Relief";
-    color: ivory;
-}
+
+
 
 .joti-one-regular {
     font-family: "Joti One", serif;
@@ -43,33 +29,147 @@ article
   #Article1
   {
     padding-bottom: 50px;
+    grid-row: 2/3;
+    grid-column: 2/3;
+    background-color: #003153;
+    border-radius: 5mm;
+    margin-top: 10px; 
+    color: ivory;
+    padding-left: 10px;
+    font-family:"Comic Relief";
   }
-
+  #g
+  {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 30mm;
+    padding-left: 30mm;
+    font-size: x-small;
+  }
+  #e
+  {
+    display: flex;
+    justify-content: start;
+    
+    
+  }
+  #l
+  {
+    display: flex;
+    justify-content: start;
+    font-size: x-small;
+    flex-direction: column;
+    padding-bottom: 5mm;
+  
+  }
   #Article2
   {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
+    align-items: start;
+    grid-row: 4/5;
+    grid-column: 2/3;
+    padding-left: 10px;
+    padding-bottom: 30px;
+    text-size-adjust: 5px;
+    background-color: #003153;
+    border-radius: 5mm;
+    color: ivory;
+    font-family:"Comic Relief";
   }
   
-  h1
+  #k
   {
-    font-size: 30mm;
-    -webkit-text-stroke: 0.01mm black;
+    display: flex;
+    font-size: x-small;
+    justify-content: start;
   }
   h2
   {
-    -webkit-text-stroke: 1px black;
+    font-size: 20mm;
+    -webkit-text-stroke: 0.01mm black;
   }
-  .comic-relief-regular {
-    font-family: "Comic Relief", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+
   
   .comic-relief-bold {
     font-family: "Comic Relief", system-ui;
     font-weight: 700;
     font-style: normal;
   }
+  h3
+  {
+    font-size: small;
+  }
+
+#fisk
+{
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  height: 220px;
+  width: 350px;
+  border-radius: 5mm;
+  margin: 10px;
+}
+#potatis
+{
+  display: grid;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  height: 230px;
+  width: 350px;
+  border-radius: 5mm;
+  margin-left: 10px;
+}
+
+#handla
+{
+display: grid;
+display: flex;
+background-color: #142B40;
+border-radius: 5mm;
+grid-row: 2/3;
+grid-column: 1/2;
+margin-top: 10px;
+margin-right: 10px;
+color: ivory;
+justify-content: center;
+padding-right: 20px;
+font-family:"Comic Relief" ;
+font-size: small;
+}
+a
+{
+  color: ivory;
   
+}
+ul
+{
+  list-style: none;
+}
+#extra
+{
+  display: grid;
+  grid-row: 4/5;
+  grid-column: 1/2;
+  background-color: #142B40;
+  margin-right: 10px;
+  border-radius: 5mm; 
+  font-family: "Comic Relief";
+  font-size: small;
+  padding-right: 15px;
+  color: ivory;
+}
+#nav
+{
+  display: grid;
+  grid-row: 5/6;
+  grid-column: 1/4;
+  justify-content: center;
+  align-items: center;
+  background-color: #142B40;
+  border-radius: 5mm;
+  margin-top: 10px;
+}
